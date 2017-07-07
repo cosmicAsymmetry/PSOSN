@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://www.highcharts.com/highslide/highslide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/heatmap.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+                <div id="container" style="">Loading....</div>
+
+
+    <script>
+        $(function(){
+
+
+ 
+
+
+
+
+            Highcharts.setOptions({"lang": {}, "global": {}});
+            var option = {"loading": {}, "subtitle": {}, "xAxis": {"categories": ["User 1", "User 2", "User 3", "User 4", "User 5"]}, "title": {"text": "Highchart Bar"}, "series": {}, "labels": {}, "yAxis": {"title": {"text": "Number of posts (thousands)"}}, "chart": {"zoomType": "xy", "renderTo": "container", "type": "bar"}, "tooltip": {}, "plotOptions": {}, "credits": {"enabled": false}, "colors": {}, "pane": {}, "exporting": {}, "drilldown": {}, "navigation": {}, "legend": {"enabled": true}};
+
+
+            var data = [{"data": [107, 31, 635, 203, 2], "type": "bar", "name": "Day 1"}, {"data": [133, 156, 947, 408, 6], "type": "bar", "name": "Day 2"}, {"data": [973, 914, 4054, 732, 34], "type": "bar", "name": "Day 3"}, {"data": [1052, 954, 4250, 740, 38], "type": "bar", "name": "Day 4"}];
+            option.series = data;
+
+ 
+
+            var chart = new Highcharts.Chart(option);
+
+
+
+
+
+ 
+
+
+        
+    });
+        </script>
+
+    </body>
+</html>

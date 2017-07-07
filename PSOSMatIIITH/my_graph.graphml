@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="relationship" attr.type="string" for="edge" id="d1" />
+  <key attr.name="gender" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="Denise">
+      <data key="d0">F</data>
+    </node>
+    <node id="Bob">
+      <data key="d0">M</data>
+    </node>
+    <node id="Carol">
+      <data key="d0">F</data>
+    </node>
+    <node id="Alan">
+      <data key="d0">M</data>
+    </node>
+    <edge source="Denise" target="Carol">
+      <data key="d1">Friends</data>
+    </edge>
+    <edge source="Bob" target="Carol">
+      <data key="d1">Married</data>
+    </edge>
+    <edge source="Bob" target="Alan">
+      <data key="d1">Friends</data>
+    </edge>
+    <edge source="Carol" target="Alan">
+      <data key="d1">Friends</data>
+    </edge>
+  </graph>
+</graphml>
